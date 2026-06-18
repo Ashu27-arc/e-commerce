@@ -1,56 +1,60 @@
-# Welcome to your Expo app 👋
+# E-Commerce App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A modern, responsive e-commerce mobile application built with React Native and Expo. 
+It features a full shopping flow including product listing, filtering, wishlist management, and a shopping bag/cart system.
 
-## Get started
+## 🚀 Features
 
-1. Install dependencies
+- **Product Listing:** Browse through a variety of products.
+- **Search & Filter:** Easily find products using text search, category filters, and sorting (by price/rating).
+- **Wishlist:** Save favorite items for later.
+- **Shopping Bag:** Add items to cart, adjust quantities, and see total price.
+- **Redux State Management:** Efficiently manages cart and wishlist states across the app.
 
-   ```bash
-   npm install
-   ```
+## 🛠️ Tech Stack
 
-2. Start the app
+- **React Native** (Expo)
+- **Expo Router** (File-based routing)
+- **Redux Toolkit** (State management)
+- **Lucide React Native** (Icons)
+- **TypeScript**
 
-   ```bash
-   npx expo start
-   ```
+## 💻 Setup and Installation
 
-In the output, you'll find options to open the app in a
+### Prerequisites
+- [Node.js](https://nodejs.org/en/) (LTS recommended)
+- npm or yarn
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+### 1. Install dependencies
 ```bash
-npm run reset-project
+npm install
 ```
+*(or `yarn install` if you use Yarn)*
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2. Start the application
+```bash
+npm start
+```
+*(or `npx expo start`)*
 
-### Other setup steps
+This will start the Metro bundler. From the terminal, you can then:
+- Press **`a`** to open in **Android Emulator** (requires Android Studio setup).
+- Press **`i`** to open in **iOS Simulator** (requires Xcode & macOS).
+- Scan the **QR code** using the **Expo Go** app on your physical iOS or Android device.
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+## 📁 Project Structure
 
-## Learn more
+- `src/app/` - Expo Router file-based navigation entries.
+- `src/screens/` - Main screens (Products, Bag, Wishlist).
+- `src/components/` - Reusable UI components (ProductCard, BagItem, FilterModal, etc.).
+- `src/store/` - Redux slices and store configuration.
+- `src/api/` - API functions and client configuration.
+- `src/types/` - TypeScript interface definitions.
 
-To learn more about developing your project with Expo, look at the following resources:
+## 📝 Available Scripts
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- `npm start` - Starts the Expo development server.
+- `npm run android` - Starts the app directly in the Android Emulator.
+- `npm run ios` - Starts the app directly in the iOS Simulator.
+- `npm run web` - Starts the app in your web browser.
+# e-commerce
