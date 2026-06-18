@@ -95,7 +95,7 @@ export const BagScreen: React.FC = () => {
         {bagItems.length === 0 ? (
           <View style={styles.emptyContainer}>
             <Image
-              source={require('../assets/tote-bag-transparent.png')}
+              source={require('../assets/tote-bag.jpg')}
               style={styles.emptyBagImage}
               resizeMode="contain"
             />
